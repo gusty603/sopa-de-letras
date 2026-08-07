@@ -11,14 +11,27 @@ h1{
  }
  #contenedor{
   display: flex;
-  width: 600px;
+  width: 650px;
   margin: 0 auto;
-
+ }
+ #interno1{
+  margin-top: 20px;
+  text-align: center;
+  form{
+    margin-top: 20px;
+  }
+ #input{
+  height: 30px;
+  margin-right: 10px;
+  position: relative;
+  bottom: 2px;
+ }
  }
  #divPalabra{
-  width: 40%;
+  text-align: center;
+  width: 50%;
   h2{
-    margin-top: 12px;
+    margin-top: 20px;
     font-size: 35px;
     color: midnightblue;
   }
@@ -36,4 +49,33 @@ h1{
   border-radius: 10px;
   
  }
- 
+ .bot{
+  background-color:midnightblue;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: greenyellow;
+ }
+
+ .sopa {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    gap: 2px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.celda {
+    width: 40px;
+    height: 40px;
+background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+}

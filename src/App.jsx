@@ -1,32 +1,32 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
 const [nombre, setNombre]=useState('')
 
 const [arrayNombre, setArrayNombres]=useState([])
-
+//llenar de nombre el array 
 function cambiarNombres(e){
   e.preventDefault();
   setArrayNombres(arrayNombre.concat(nombre))
-  console.log(arrayNombre)
+  
   setNombre('')
 }
+//creando tablero
+
+
 
   return (
     <>
+
     <div id='contenedor'>
-      <div>
+      <div id='interno1'>
      <h1>Sopa de Letras</h1>
      <p>Ingresar hasta 10 palabras enter 3 y 12 caracteres</p>
  
-
  <form onSubmit={cambiarNombres}>
-<input type="text"value={nombre} onChange={(e)=> setNombre(e.target.value)} />
-<input type="submit" value="Enviar" />
+<input id='input'value={nombre} type="text" onChange={(e)=> setNombre(e.target.value.toUpperCase())} />
+<input className='bot' type="submit" value="Enviar" />
  </form>
 </div>
 <div id='divPalabra'>
@@ -35,9 +35,14 @@ function cambiarNombres(e){
 arrayNombre.map((a,i)=> <li key={i}>{a}</li>)
   
 }
+<button className='bot'>Comenzar</button>
 </div>
  </div>
+
+{
  
+}
+
     </>
     
   )
