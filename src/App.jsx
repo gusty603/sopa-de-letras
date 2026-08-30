@@ -23,7 +23,6 @@ filaArray.push("")
 }
 const [tablero1, setTablero1]=useState(tablero);
 //-------
-
   return (
     <>
 
@@ -48,7 +47,7 @@ arrayNombre.map((a,i)=> <li key={i}>{a}</li>)
  </div>
 
 
-  <div className='tablero'>   
+<div className='tablero'>   
  {tablero.map((fila,i)=>
                          fila.map((col,c)=>(
                          <div className='celda' key={`${i}-${c}`}>{col}</div> )))}
