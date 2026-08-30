@@ -29,7 +29,7 @@ const [tablero1, setTablero1]=useState(tablero);
     <div id='contenedor'>
       <div id='interno1'>
      <h1>Sopa de Letras</h1>
-     <p>Ingresar hasta 10 palabras enter 3 y 12 caracteres</p>
+     <p>Ingresar hasta 10 palabras, entre 3 y 10 caracteres</p>
  
  <form onSubmit={asignarNombres}>
 <input id='input'value={nombre} type="text" onChange={(e)=> setNombre(e.target.value)} />
